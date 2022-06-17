@@ -1,0 +1,83 @@
+.nav_bg {
+    background-color: var(--font-secondary);
+    border-bottom: 1px solid var(--border);
+}
+.nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.navbar_text {
+    margin-left: 93px;
+    display: flex;
+    gap: 50px;
+}
+.nav_text {
+    position: relative;
+    display: block;
+    padding: 32px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--font-main);
+    
+    transition-property: color;
+    @extend %animation;
+    &:hover,
+    &:focus {
+        color: var(--hover-blue);
+    }
+}
+.active {
+    color: var(--hover-blue);
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: -1px;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--hover-blue);
+    }
+}
+.contacts {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.contacts_nom {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    fill: var(--font-main-light);
+    color: var(--font-main-light);
+
+    transition-property: color, fill;
+    @extend %animation;
+    &:hover,
+    &:focus {
+        color: var(--hover-blue);
+    }
+    &:hover .contact_icon,
+    &:focus .contact_icon{
+        fill: var(--hover-blue);
+    }
+}
+.contact_icon {
+    display: inline-block;
+    margin-right: 10px;
+
+    transition-property: fill;
+    @extend %animation;
+}

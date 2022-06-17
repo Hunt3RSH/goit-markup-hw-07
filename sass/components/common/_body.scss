@@ -1,0 +1,40 @@
+body {
+    font-family: 'Roboto', 'sans-serif';
+    color: var(--font-main);
+    margin: 0;
+}
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    background: var(--background-light);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--hover-blue);
+}
+/* selection */
+h1::selection {
+    background-color: var(--hover-blue);
+    color: var(--font-secondary);
+}
+h2::selection {
+    background-color: var(--hover-blue);
+    color: var(--font-secondary);
+}
+h3::selection {
+    background-color: var(--hover-blue);
+    color: var(--font-secondary);
+}
+p::selection {
+    background-color: var(--hover-blue);
+    color: var(--font-secondary);
+}
+a::selection {
+    background-color: var(--hover-blue);
+    color: var(--font-secondary);
+}
+span::selection {
+    background-color: var(--hover-blue);
+    color: var(--font-secondary);
+}

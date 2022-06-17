@@ -5,17 +5,11 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    // color: $font-main;
+    color: var(--font-main);
 }
-.logo-footer {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    // color: $font-secondary;
-    &__main {
-        // color: $hover;
-    }
+.logo-web {
+    color: var(--hover-blue);
+}
+.logo-studio {
+    color: var(--font-secondary);
 }

@@ -1,10 +1,27 @@
 // utils
 @import "./components/utils/placeholders";
+@import "./components/utils/variables";
+@import "./components/common/body";
+@import "./components/common/extras";
 
 
 // common 
 @import "./components/common/logo";
+@import "./components/common/btn";
 @import "./components/common/container";
+@import "./components/common/section";
+@import "./components/common/footer";
 
 // header
 @import "./components/header/navigation";
+// main
+@import "./components/main/hero";
+@import "./components/main/features";
+@import "./components/main/kind";
+@import "./components/main/cards-team";
+@import "./components/main/parthners-card";
+@import "./components/main/form-footer";
+@import "./components/main/modal";
+// portfolio
+@import "./components/portfolio/btn-filter";
+@import "./components/portfolio/grid-card";
