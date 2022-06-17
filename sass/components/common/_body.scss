@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', 'sans-serif';
+    font-family: $fontPrimary, $fontSecondary;
     color: var(--font-main);
     margin: 0;
 }
